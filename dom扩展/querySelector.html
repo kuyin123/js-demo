@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="myDiv"></div>
+		<div class="selected">1</div>
+		<div class="selected1">
+			<label></label>
+		</div>
+	</body>
+	<script>
+		/*通过Document类型调用querySelector时，会在文档元素范围内查找 匹配的元素。而通过Element类型调用时，只会在该元素范围内查找 */
+		var body = document.querySelector("body");
+		var myDiv = document.querySelector("#myDiv");
+		var selected = document.querySelector('.selected1');
+		var label = selected.querySelector("label");
+		console.log("body->" + body);
+		console.log("myDiv->" + myDiv);
+		console.log("selected->" + selected);
+		console.log("label->" + label);
+	</script>
+</html>

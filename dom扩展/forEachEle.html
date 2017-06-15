@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		158999
+		<div id="myDiv"></div>
+		<div class="selected">1</div>
+		<div class="selected1">
+			<label></label>
+		</div>
+	</body>
+	<script>
+		/*遍历所有的子元素 */
+		var body = document.querySelector("body");
+		var i,len,child = body.firstElementChild;
+		while(child != body.lastElementChild){
+			alert(child.innerHTML);
+			child = child.nextElementSibling;
+		}
+	</script>
+</html>

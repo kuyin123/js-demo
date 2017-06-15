@@ -1,0 +1,86 @@
+<!DOCTYPE HTML >
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>扫描二维码</title>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			var k = 0;
+			function addContent() {
+				var table = document.getElementById("tableId");
+				var trArr = [];
+				for(var i = 0; i < 100; i++) {
+					var tr = document.createElement("tr");
+					var tdArr = [];
+					for(var j = 0; j < 3; j++) {
+						var td = "<td>试试测试试测试试测试试测试试测试试测试试测试试测试试</td>";
+						tdArr.push(td);
+					}
+					var tr = "<tr>" + tdArr.join("") + "<tr>"
+					trArr.push(tr);
+				}
+				for(var x=0;x<k;x++){
+					trArr = trArr.concat(trArr);
+				}
+				table.innerHTML = trArr.join("");
+				++k;
+			}
+		</script>
+
+		<body>
+			<button onclick="addContent()">新增</button>
+			<table>
+				<tbody id="tableId">
+					<tr>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+					</tr>
+					<tr>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+					</tr>
+					<tr>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+					</tr>
+					<tr>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+					</tr>
+					<tr>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+					</tr>
+					<tr>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+						<td>测试试测试试测试试测试试测试试测试试测试试测试试测试试测试试</td>
+					</tr>
+				</tbody>
+
+			</table>
+		</body>
+		<style type="text/css">
+			table {
+				overflow: scroll;
+				width: 100%;
+				height: 100%
+			}
+			table tbody{
+				width: 100%;
+				height: 100%
+			}
+			
+			tbody{
+				width:100px;
+			}
+		</style>
+
+</html>

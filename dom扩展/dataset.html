@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<div id="myDiv" data-a="125" data-b="9"></div>
+	</body>
+	<script>
+		//dataset支持的浏览器有：IE11,chrome和Firefox
+			var myDiv = document.getElementById("myDiv");
+			var a = myDiv.dataset.a;
+			var b = myDiv.dataset.b;
+			
+			alert("a->" + a + "***b->" + b);
+		</script>
+</html>

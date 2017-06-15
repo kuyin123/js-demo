@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="myDiv" style="border: 1px solid red;"></div>
+	</body>
+	<script>
+		var myDiv = document.getElementById("myDiv");
+		//同辈元素之前插入
+		myDiv.insertAdjacentHTML("beforebegin","<p>beforebegin</p>");
+		//作为第一个元素的子元素插入
+		myDiv.insertAdjacentHTML("afterbegin","<p>afterbegin</p>");
+		//作为最后一个子元素插入
+		myDiv.insertAdjacentHTML("beforeend","<p>beforeend</p>");
+		//作为后一个元素的同辈插入
+		myDiv.insertAdjacentHTML("afterend","<p>afterend</p>");
+	</script>
+</html>

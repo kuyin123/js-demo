@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="myDiv" class="selected a b c   d"></div>
+	</body>
+	<script>
+		//add:将给定的字符 串值添加到列表中。如果值已经存在，就不 添加
+		//contains:表示列表中是否存在给定的值。如果值已存在，就不添加了。
+		//toggle:如果列表中已在存在给定的值 ，删除它；如果列表中没有给定的值，添加它。
+		var myDiv = document.querySelector("#myDiv");
+//		var classNames = myDiv.className.split(/\s+/);
+//		//找到要删除的类名
+//		var pos = -1,
+//		i,len;
+//		for(i=0,len = classNames.length;i<len;i++){
+//			if(classNames[i] == "a"){
+//				pos = i;
+//				break;
+//			}
+//		}
+//		
+//		classNames.splice(i,1);
+//		myDiv.className = classNames.join(" ")
+
+		myDiv.classList.remove("a");
+		alert(myDiv.classList + "");
+	</script>
+</html>
